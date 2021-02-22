@@ -1,0 +1,195 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background: linear-gradient(to left , red,rgb(212, 104, 104));
+    width: 100%;
+    height: 100px;
+}
+header a{
+    color: rgb(70, 41, 3);
+}
+ #img1{
+    height: 100px;
+    border-radius: 50%;
+    float: right;
+}
+#logoBox{
+   float: right;
+   background-color: blanchedalmond;
+   width: 25%;
+}
+#h1Header{
+    float: left;
+    line-height: 100px;
+    padding: 0 10px;
+} 
+nav{
+    width: 75%;
+    text-align: center;
+}
+nav a{
+    text-decoration:none;
+    color: blanchedalmond;
+    display: inline-block;
+}
+nav li{
+    display:inline-block;
+    line-height: 100px;
+    width: 100px;
+    text-align: center;
+    font-weight: bold;
+}
+nav a:hover{
+    background-color: #fafafa;
+    color: black;
+    height: 100%;
+    width: 100%;
+}
+
+#contact{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    }
+    #contact img{
+        width: 45px;
+        border-bottom: 4px solid red;
+        height: 90px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #contact img:hover{
+        width: 55px;
+        border-bottom:4px solid tomato;
+    }    
+main{
+    background-color: burlywood;
+    width: 100%;
+    height: 500px;
+    border-top:3px solid white;
+    animation-name:ChengBackgroung ;
+    animation-duration: 6s;
+    animation-iteration-count:infinite;
+}
+@keyframes ChengBackgroung{
+    0%{
+        background-color: turquoise;
+     }
+    50%{
+        background-color: tomato;
+    } 
+    100%{
+        background: linear-gradient(to left , red,rgb(212, 104, 104)); 
+    }
+}
+aside{
+    width: 30%;
+    height: 100%;
+    background-color: aqua;
+    text-align: center;
+    float: left;
+}
+aside img{
+    width: 90%;
+    height: 200px;
+
+}
+#h1Aside{
+    padding: 20px 0px;
+    border-bottom: 2px solid brown ;
+}
+article{
+    width: 70%;
+    height: 500px;
+    float: right;
+    position: relative;
+}
+#Box{
+    position: absolute;
+    width: 400px;
+    height: 180px;
+    background-color: crimson;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+
+}
+#articleId{
+    width: 100%;
+    text-align: center;
+    clear: both;
+}
+#img0{
+    margin: 11px;  
+    width: 26%;
+}
+
+
+
+
+
+@media only screen and (max-width:1097px){
+        #logoBox{
+            width: 30%;
+        }
+       nav{
+           width: 70%;
+       }
+}
+@media only screen and (max-width:917px){
+    #logoBox{
+        width: 35%;
+    }
+   nav{
+       width: 65%;
+   }
+}
+@media only screen and (max-width:1097px){
+    #logoBox{
+        width: 40%;
+    }
+   nav{
+       width: 60%;
+   }
+
+}
+@media only screen and (max-width:700px){
+    header{
+        height: auto;
+    }
+    #logoBox{
+        width: 100%;
+    }
+
+    #h1Header,#img1{
+        float: center;
+    }   
+    nav{
+        width: 100%;
+    }
+    aside{
+        width:100%;
+    }
+    article{
+    width: 97%;
+    height: 252px;
+    }
+    #Box{
+    display: none;
+}
+
+@media only screen and (max-width:540px){
+    nav li{
+    display: block;
+    width: 100%;
+    }
+}
+@media only screen and (orientation:landscape){
+    #logoBox{
+    background-color: burlywood;    
+}
